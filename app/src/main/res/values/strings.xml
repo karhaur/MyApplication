@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" >MyApplication</string>
+    <string name="helloText" >Hello Class!</string>
+    <string name="textNumber">Hello</string>
+    <string name="rollDice">Roll</string>
+    <string name="rollDiceRules"/>
+    <string name="playerName">Enter Your Name</string>
+</resources>
