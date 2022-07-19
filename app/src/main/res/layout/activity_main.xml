@@ -9,8 +9,27 @@
     android:padding="@dimen/layout_margin"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/editPlayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="@string/editPlayerName"/>
+
+        <Button
+            android:id="@+id/updatePlayerNameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/updatePlayerNameTxt"/>
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/playerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -24,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Hello Sir"
+        android:text="Dice Roll"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,5 +66,23 @@
         android:text="ROLL"
         tools:layout_editor_absoluteX="1580dp"
         tools:layout_editor_absoluteY="1580dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/rulesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/rulesTxt"
+                style="@style/name_style" />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
